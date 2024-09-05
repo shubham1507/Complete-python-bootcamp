@@ -69,15 +69,25 @@ restricted_items = {
     "Drugs"
 }
 
-beach_selection = int(input("Select Beach Type (1 - Family beach, 2 - Normal Beach):\n"))
+# Prompt the user for input and handle EOFError
+try:
+    user_input = input("Select Beach Type (1 - Family beach, 2 - Normal Beach): ")
+except EOFError:
+    print("No input received. Defaulting to Family beach.")
+    user_input = "1"
 
-if beach_selection == "1":
+# Validate user input and modify the general_items set accordingly
+if user_input == "1":
+    # Remove all restricted items from general_items if it's a family beach
     for item in restricted_items:
         general_items.discard(item)
-else:
+elif user_input == "2":
+    # Remove only "Drugs" if it's a normal beach
     general_items.discard("Drugs")
-    
-print("See below the list of items that you can take.")
+else:
+    print("Invalid selection. Please choose 1 or 2.")
+
+# Print the list of items that can be taken
+print("See below the list of items that you can take:")
 for item in general_items:
     print(f"\t{item}")
-
