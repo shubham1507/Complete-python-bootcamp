@@ -89,3 +89,11 @@ to_remove = [3, 5, 7]
 rem_list=[num for num in numbers if num not in to_remove]
 
 print(rem_list)
+#-----------print duplicates from a list of integers------------
+
+def duplicate(p_list):
+    return list(set([num for num in p_list if p_list.count(num)>1]))
+    
+if __name__=='__main__':
+    duplicate_list=[1, 2, 1, 2, 3, 4, 5, 1, 1, 2, 5, 6, 7, 8, 9, 9]
+    print(duplicate(duplicate_list))
