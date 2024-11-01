@@ -16,4 +16,31 @@ res=[ sub.replace('G', '-').replace('i', 'I').replace('f','F')    for sub in tes
 #print ("List after performing character swaps : " + str(res))
 
 #--------------------------------
+#clear a list in Python
+
+test_list.clear()
+
+#------------Reversing a List in Python-----------------
+
+ls.reverse()
+print(ls)
+#OR
+print(ls[::-1])
+
+#----------------Python | Cloning or Copying a list
+
+def Clonning(p_ls):
+    ls_copy=ls[:]
+    return ls_copy
+    
+ls2=Clonning(ls)
+print(ls2)
+
+#OR
+import copy
+
+li3=copy.copy(ls)
+print(li3)
+
+
 
