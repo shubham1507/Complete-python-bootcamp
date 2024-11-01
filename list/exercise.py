@@ -63,10 +63,17 @@ print(statistics.mean(ls))
 
 res=list(map(lambda number: sum(int(digit) for digit in str(number)),ls))
 print(res)
-#------2nd largest and 3rd smallest, even, odd
+#------2nd largest and 3rd smallest, even, odd, -ve, +ve number
 
 print("The 2nd largest number in list ls \n",sorted(set(ls))[-2])
 print("The third_smallest number in list ls \n",sorted(set(ls))[2])
 print("The even numbers in list ls \n", [even for even in ls if even%2==0])
 print("The odd numbers in list ls \n", [odd for odd in ls if odd%2!=0])
 
+list1 = [-10, -21, -4, 45, -66, 93]
+
+
+pos_res=[num for num in list1 if num>=0]
+neg_res=[num for num in list1 if num<0]
+print("The +ve numbers are :",pos_res)
+print("The -ve numbers are :",neg_res)
