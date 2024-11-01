@@ -59,3 +59,7 @@ import statistics
 print(sum(ls))
 print(statistics.mean(ls))
 
+#--------------Sum of number digits in List
+
+res=list(map(lambda number: sum(int(digit) for digit in str(number)),ls))
+print(res)
