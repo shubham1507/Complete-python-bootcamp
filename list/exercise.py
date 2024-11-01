@@ -77,3 +77,15 @@ pos_res=[num for num in list1 if num>=0]
 neg_res=[num for num in list1 if num<0]
 print("The +ve numbers are :",pos_res)
 print("The -ve numbers are :",neg_res)
+
+
+#--------------------Remove Multiple Elements
+# Initial list
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Elements to remove
+to_remove = [3, 5, 7]
+
+rem_list=[num for num in numbers if num not in to_remove]
+
+print(rem_list)
