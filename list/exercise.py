@@ -97,3 +97,12 @@ def duplicate(p_list):
 if __name__=='__main__':
     duplicate_list=[1, 2, 1, 2, 3, 4, 5, 1, 1, 2, 5, 6, 7, 8, 9, 9]
     print(duplicate(duplicate_list))
+
+
+#--------------------Remove empty List from List
+
+test_list = [5, 6, [], 3, [], [], 9]
+
+res=[ele for ele in test_list if ele !=[]]
+
+print("List after removal of emty list item\n",res)
