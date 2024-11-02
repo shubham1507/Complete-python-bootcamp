@@ -106,3 +106,9 @@ test_list = [5, 6, [], 3, [], [], 9]
 res=[ele for ele in test_list if ele !=[]]
 
 print("List after removal of emty list item\n",res)
+
+#---------------------Convert List to List of dictionaries
+
+test_list = ["Gfg", 3, "is", 8, "Best", 10, "for", 18, "Geeks", 33]
+dict_list=[{"key":test_list[i],"value":test_list[i+1]} for i in range(0,len(test_list),2)]
+print(dict_list)
