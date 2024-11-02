@@ -112,3 +112,10 @@ print("List after removal of emty list item\n",res)
 test_list = ["Gfg", 3, "is", 8, "Best", 10, "for", 18, "Geeks", 33]
 dict_list=[{"key":test_list[i],"value":test_list[i+1]} for i in range(0,len(test_list),2)]
 print(dict_list)
+#--------------------Convert Lists of List to Dictionary Using Dictionary Comprehension
+
+test_list = [['a', 'b', 1, 2], ['c', 'd', 3, 4], ['e', 'f', 5, 6]]
+
+res={tuple(sub[:2]):tuple(sub[2:]) for sub in test_list}
+
+print(res)
