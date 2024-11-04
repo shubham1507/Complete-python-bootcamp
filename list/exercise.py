@@ -126,3 +126,25 @@ list1 = [-10, -21, -4, 45, -66, 93]
 
 neg_nums=[n for n in list1 if n < 0]
 print("The negative numbers in list1 are: \n",neg_nums)
+
+#------------------ common and uncommon elements in list
+
+a = [1, 2, 3, 4, 5]
+b = [5, 6, 7, 8, 9]
+
+def common(a, b):
+    a_set=set(a)
+    b_set=set(b)
+    
+    if (a_set & b_set):
+        print(a_set & b_set)
+    else:
+        print("No common element")
+
+        
+test_list1 = [ [1, 2], [3, 4], [5, 6] ]
+test_list2 = [ [3, 4], [5, 7], [1, 2] ]
+
+res_set=set(map(tuple, test_list1)) ^ set(map(tuple, test_list2))
+
+print("Uncommon elements between 2 sets \n",set(map(tuple,res_set)))
