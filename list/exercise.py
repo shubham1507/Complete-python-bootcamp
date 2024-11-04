@@ -119,3 +119,10 @@ test_list = [['a', 'b', 1, 2], ['c', 'd', 3, 4], ['e', 'f', 5, 6]]
 res={tuple(sub[:2]):tuple(sub[2:]) for sub in test_list}
 
 print(res)
+#-----------------------print negative numbers in a list
+
+# list of numbers
+list1 = [-10, -21, -4, 45, -66, 93]
+
+neg_nums=[n for n in list1 if n < 0]
+print("The negative numbers in list1 are: \n",neg_nums)
