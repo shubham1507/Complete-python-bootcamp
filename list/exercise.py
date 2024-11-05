@@ -148,3 +148,16 @@ test_list2 = [ [3, 4], [5, 7], [1, 2] ]
 res_set=set(map(tuple, test_list1)) ^ set(map(tuple, test_list2))
 
 print("Uncommon elements between 2 sets \n",set(map(tuple,res_set)))
+
+#---------------Count unique items in a list
+input_list = [1, 2, 2, 5, 8, 4, 4, 8]
+
+empty=[]
+count=0
+
+for number in input_list:
+    if number not in empty:
+        count+=1
+        empty.append(number)
+        
+print("The number of duplicacy in list is: \n",count)
