@@ -1,3 +1,10 @@
+"""
+This project defines a decorator called memoize which takes a function as an argument and returns a new function that 
+caches the results of the original function for future calls with the same arguments.It also defines a function called
+fibonacci which recursively computes the Fibonacci sequence up to the nth number.
+
+"""
+
 #1. Create a decorator called memoize which takes a function as an argument and returns a new function that caches the results of the original function inside a dictionary. wrapper checks if the argument does not exist in dictionary, it adds to cache it.
 
 def memoize(func):
