@@ -31,3 +31,11 @@ half_idx=len(st)//2
 new_string=st[half_idx:]+st[:half_idx].upper()
 
 print(new_string)
+
+#Capitalize the first and last character of each word in a string
+string = "geeks quiz practice code"
+st=""
+for i in string.title().split():
+    st+=(i[:-1]+i[-1].upper())+' '
+    
+print(st)
