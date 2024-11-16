@@ -55,3 +55,20 @@ def char_dgt(s):
     return flag_l and flag_d
     
 print(char_dgt("welcome2ourcountry34"))
+
+
+#Program to Accept the Strings Which Contains all Vowels
+import re
+ 
+sampleInput = "aeioAEiuioea"
+ 
+# regular expression to find the strings
+# which have characters other than a,e,i,o and u
+c = re.compile('[^aeiouAEIOU]')
+ 
+# use findall() to get the list of strings
+# that have characters other than a,e,i,o and u.
+if(len(c.findall(sampleInput))):
+    print("Not Accepted")  # if length of list > 0 then it is not accepted
+else:
+    print("Accepted")  # if length of list = 0 then it is accepted
