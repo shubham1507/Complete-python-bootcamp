@@ -39,3 +39,19 @@ for i in string.title().split():
     st+=(i[:-1]+i[-1].upper())+' '
     
 print(st)
+
+#program to check if a string has at least one letter and one number
+
+def char_dgt(s):
+    flag_l= False
+    flag_d= False
+    
+    for i in s:
+        if i.isalpha():
+            flag_l= True
+        if i.isdigit():
+            flag_d= True
+            
+    return flag_l and flag_d
+    
+print(char_dgt("welcome2ourcountry34"))
