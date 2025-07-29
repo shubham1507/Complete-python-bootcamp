@@ -30,4 +30,32 @@ even_len = [word for word in get_words if len(word)%2==0]
 
 print(" ".join(even_len))
 
+#Uppercase Half String
+
+s= "shubham"
+i= len(s)//2
+print(s[:i].upper()+s[i:])
+
+#capitalize the first and last character of each word in a string
+print(s.capitalize().replace(s[-1],s[-1].upper()))
+
+sentense= " This is something very big"
+
+splitted=sentense.split()
+print(splitted)
+capitalize=[word.capitalize().replace(word[-1],word[-1].upper()) for word in splitted ]
+print(" ".join(capitalize))
+
+#check if a string has at least one letter and one number
+
+s = "geeksforgeeks"
+
+al = any(c.isalpha() for c in s)
+dt = any(d.isdigit() for d in s)
+
+if al and dt:
+    print("yes")
+ 
+else:
+    print("no")
 
