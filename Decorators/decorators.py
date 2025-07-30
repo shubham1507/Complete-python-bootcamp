@@ -1,3 +1,14 @@
+def multiply(a, b):
+    return a*b
+    
+def add(a, b):
+    return a+b
+    
+operation_list = [multiply, add]
+
+print(operation_list[0](2, 5))
+#------------------
+
 def parent(num):
     def f_child():
         return "This is 1st child"
