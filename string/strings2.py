@@ -59,3 +59,40 @@ if al and dt:
 else:
     print("no")
 
+#Accept the strings which contains all vowels Using all()
+
+s = "Geeksforgeeks"
+v = 'aeiou'
+
+if all(i in s.lower() for i in v):
+    print(True)
+else:
+    print(False)
+    
+#Count the Number of matching characters in a pair of string
+
+s1 = "VISHAKSHI"
+s2 = "VANSHIKA"
+
+res=len(set(s1.lower()).intersection(set(s2.lower())))
+print(res)
+
+#Count number of vowels using sets in given string
+s = "Python Programming"
+vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
+
+count = sum(1 for ch in s if ch in vowels)
+print(count)
+
+#Remove All Duplicates from a Given String in Python
+
+res=""
+seen=set()
+
+for char in s:
+    if char not in seen:
+        seen.add(char)
+        res+=char
+        
+print("unique chr is: ", res)
+
