@@ -74,3 +74,5 @@
 - Complex Inner Classes
 
 ## 12. Case Studies
+
+## https://chatgpt.com/c/68995655-713c-832a-9d2b-bebb622066a6
