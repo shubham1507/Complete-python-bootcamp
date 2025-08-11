@@ -1,43 +1,76 @@
-OOPs,Procedural v/s Object oriented programming,
-OOPs,Principles of OOP – Encapsulation Abstraction (Data Hiding),
-OOPs,Classes and Objects,
-OOPs,How to define class in python,
-OOPs,Types of variables – instance variables class variables,
-OOPs,Types of methods – instance methods class method static method,
-OOPs,Object initialization,
-OOPs,‘self’ reference variable,
-OOPs,‘cls’ reference variable,
-OOPs,Access modifiers – private(__) protected(_) public,
-OOPs,AT property class,
-OOPs,Property() object,
-OOPs,Creating object properties using setaltr getaltr functions,
-OOPs,Encapsulation(Data Binding),
-OOPs,What is polymorphism?,
-OOPs,Overriding,
-OOPs,Method overriding,
-OOPs,Constructor overriding,
-OOPs,Overloading,
-OOPs,Method Overloading,
-OOPs,Constructor Overloading,
-OOPs,Operator Overloading,
-OOPs,Class re-usability,
-OOPs,Composition,
-OOPs,Aggregation,
-OOPs,Inheritance – single multi level multiple hierarchical and hybrid inheritance and Diamond inheritance,
-OOPs,Constructors in inheritance,
-OOPs,Object class,
-OOPs,super(),
-OOPs,Runtime polymorphism,
-OOPs,Method resolution order(MRO),
-OOPs,Method overriding in Multiple inheritance and Hybrid Inheritance,
-OOPs,Duck typing,
-OOPs,Concrete Methods in Abstract Base Classes,
-OOPs,Difference between Abstraction & Encapsulation,
-OOPs,Inner classes,
-OOPs,Introduction,
-OOPs,Writing inner class,
-OOPs,Accessing class level members of inner class,
-OOPs,Accessing object level members of inner class,
-OOPs,Local inner classes,
-OOPs,Complex inner classes,
-OOPs,Case studies,
+# Object-Oriented Programming in Python
+
+## 1. OOPs Overview
+- Procedural vs Object-Oriented Programming
+- Principles of OOP
+  - Encapsulation
+  - Abstraction (Data Hiding)
+
+## 2. Classes and Objects
+- How to define a class in Python
+- Types of Variables
+  - Instance Variables
+  - Class Variables
+- Types of Methods
+  - Instance Methods
+  - Class Methods
+  - Static Methods
+- Object Initialization
+- `self` Reference Variable
+- `cls` Reference Variable
+
+## 3. Access Modifiers
+- Private (`__`)
+- Protected (`_`)
+- Public
+
+## 4. Properties in Python
+- `@property` Decorator
+- `property()` Object
+- Creating Object Properties using `setattr()` and `getattr()` Functions
+
+## 5. Encapsulation (Data Binding)
+
+## 6. Polymorphism
+- What is Polymorphism?
+- Overriding
+  - Method Overriding
+  - Constructor Overriding
+- Overloading
+  - Method Overloading
+  - Constructor Overloading
+  - Operator Overloading
+- Runtime Polymorphism
+
+## 7. Class Reusability
+- Composition
+- Aggregation
+
+## 8. Inheritance
+- Types of Inheritance
+  - Single
+  - Multi-Level
+  - Multiple
+  - Hierarchical
+  - Hybrid Inheritance
+  - Diamond Inheritance
+- Constructors in Inheritance
+- `super()` Keyword
+- Method Resolution Order (MRO)
+- Method Overriding in Multiple and Hybrid Inheritance
+
+## 9. Duck Typing
+
+## 10. Abstract Base Classes
+- Concrete Methods in Abstract Base Classes
+- Difference between Abstraction & Encapsulation
+
+## 11. Inner Classes
+- Introduction
+- Writing Inner Class
+- Accessing Class-Level Members of Inner Class
+- Accessing Object-Level Members of Inner Class
+- Local Inner Classes
+- Complex Inner Classes
+
+## 12. Case Studies
