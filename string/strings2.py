@@ -96,3 +96,18 @@ for char in s:
         
 print("unique chr is: ", res)
 
+
+#check if a string contains any special character
+
+import re 
+
+def run(string):
+    regex = re.compile('[@_!#$%^&*()<>?/\|}{~:]')
+    if(regex.search(string) == None):
+        print("String dosnt have special char")
+    else:
+        print("String have special char")
+        
+if __name__ == '__main__':
+    string = "Geeks!@#$%forGeeks"
+    run(string)
