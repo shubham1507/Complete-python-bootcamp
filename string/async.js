@@ -2,30 +2,26 @@ const handleSearch = async (data) => {
   try {
     setLoading(true);
 
-    // Fetch response using run_id (your existing API)
-    const response = await apiClient.get(
-      /api/v1/services/test_run/domains/${domainName}/projects/${projectName}/test-runs?run_id=${data.testRunId}
+    // fetch using your existing run_id API
+    const res = await apiClient.get(
+      `/api/v1/services/test_run/domains/${domainName}/projects/${projectName}/test-runs?run_id=${data.testRunId}`
     );
 
-    let results = response.data.data; // all runs from backend
-    let filteredResults = results;
+    const results = res.data?.data ?? [];
+    const filtered = data.runName
+      ? results.filter(r =>
+          (r.run_name || "").toLowerCase().includes(data.runName.toLowerCase())
+        )
+      : results;
 
-    // If user entered runName (frontend search)
-    if (data.runName && data.runName.trim() !== "") {
-      filteredResults = results.filter(run =>
-        run.run_name.toLowerCase().includes(data.runName.toLowerCase())
-      );
-    }
-
-    setRuns(filteredResults);
-    setTotalRows(filteredResults.length);
-  } catch (error) {
-    if (error.response?.status === 401) {
-      logout(true);
-    } else if (error.response?.status === 403) {
-      console.error(Access denied for project ${projectName});
+    setRuns(filtered);
+    setTotalRows(filtered.length);
+  } catch (err) {
+    if (err.response?.status === 401) logout(true);
+    else if (err.response?.status === 403) {
+      console.error(`Access to project ${projectName} denied: ${err.message}`);
     } else {
-      console.error("Error fetching data: ", error.message);
+      console.error(`Error fetching data: ${err.message}`);
     }
   } finally {
     setLoading(false);
